@@ -3,7 +3,7 @@ from modelos.restaurante import Restaurante #usado para importar o codigo de out
 restaurante_praca = Restaurante('Praca', 'Gourmet')
 restaurante_praca.receber_avaliacao('Gui', 10)
 restaurante_praca.receber_avaliacao('Lais', 8)
-restaurante_praca.receber_avaliacao('Emy', 5)
+restaurante_praca.receber_avaliacao('Emy', 2)
 
 
 def main():
