@@ -17,6 +17,7 @@ class Restaurante: #criando uma classe
         self.categoria = categoria.upper() #deixa o metodo com todas as letras maiusculas - (.upper())
         self._ativo = False #usando o underline para definir que o atributo é privado (_ativo)
         self._avaliacao = []
+        self._cardapio = []
         Restaurante.restaurantes.append(self) #adicionando o restaurante na lista de restaurantes
 
     def __str__(self): #criando o metodo str para retornar uma string com os valores dos atributos da classe
@@ -60,3 +61,9 @@ class Restaurante: #criando uma classe
         quantidade_de_notas = len(self._avaliacao)
         media = round(soma_das_notas / quantidade_de_notas, 1)
         return media
+    
+    def adicionar_bebida_no_cardapio(self, bebida):
+        self._cardapio.append(bebida)
+    
+    def adicionar_prato_no_cardapio(self, prato):
+        self._cardapio.append(prato)
